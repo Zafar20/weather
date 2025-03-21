@@ -1,0 +1,86 @@
+.current {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        border-radius: 20px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 2px 5px 25px 0 rgba(20, 1, 1, 0.25);
+        background: var(--bg);
+        padding: 20px;
+        position: relative;
+        &_degree {
+            font-weight: 500;
+            font-size: 96px;
+            color: #4793ff;
+        }
+        &_today {
+            font-weight: 400;
+            font-size: 40px;
+            color: var(--text);
+        }
+        &_time {
+            font-weight: 400;
+            font-size: 25px;
+            color: #939cb0;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        &_city {
+            font-weight: 400;
+            font-size: 25px;
+            color: #939cb0;
+        }
+        &_img {
+            position: absolute;
+            right: 20px;
+            top: 46px;
+            width: 120px;
+            height: 120px;
+        }
+    }
+    &__right {
+        border-radius: 20px;
+        max-width: 750px;
+        width: 100%;
+        box-shadow: 2px 5px 25px 0 rgba(20, 1, 1, 0.25);
+        background: var(--bg);
+        padding: 40px 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        &_img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &_item {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            z-index: 1;
+            &_icon {
+                border-radius: 100%;
+                background: var(--bg);
+                box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+                width: 38px;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &_text {
+                font-weight: 400;
+                font-size: 14px;
+                color: #939cb0;
+                min-width: 96px;
+            }
+            &_value {
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--text);
+            }
+        }
+    }
+}

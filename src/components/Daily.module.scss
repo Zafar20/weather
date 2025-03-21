@@ -1,0 +1,47 @@
+.daily {
+    border-radius: 0 0 20px 20px;
+    box-shadow: 2px 5px 25px -3px rgba(46, 40, 40, 0.25);
+    background: var(--bg);
+    padding: 20px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 20px;
+    &__item {
+        background: rgba(71, 147, 255, 0.2);
+        border-radius: 10px;
+        padding: 11px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &_day {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--text);
+        }
+        &_month {
+            font-weight: 400;
+            font-size: 14px;
+            color: #939cb0;
+        }
+        &_img {
+            width: 48px;
+            height: 48px;
+        }
+        &_temp {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--text);
+        }
+        &_temp2 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #939cb0;
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 13px;
+            color: #939cb0;
+        }
+    }
+}
