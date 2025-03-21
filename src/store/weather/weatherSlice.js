@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const getCordinates = createAsyncThunk('weatherSlice/getCordinates', async(city, {dispatch}) => {
-    let { data } = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${initialState.apiKey}`)
+    let { data } = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${initialState.apiKey}`)
     dispatch(getWeather(data[0]))
 })
 
