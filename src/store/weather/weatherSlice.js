@@ -2,12 +2,12 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from 'axios'
 
 const initialState = {
-    apiKey: import.meta.env.VITE_OPENWEATHER_API_KEY,
+    apiKey: '3c9333a1a3a40ca893996cbeb44b7022',
     data: null
 }
 
 export const getCordinates = createAsyncThunk('weatherSlice/getCordinates', async(city, {dispatch}) => {
-    let { data } = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${initialState.apiKey}`)
+    let { data } = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${initialState.apiKey}`)
     dispatch(getWeather(data[0]))
 })
 
